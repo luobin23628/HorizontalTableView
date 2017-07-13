@@ -32,7 +32,7 @@
 
 
 - (NSInteger)numberOfRowsInTableView:(TKHorizontalTableView *)tableView {
-    return 20;
+    return 100;
 }
 
 - (TKHorizontalTableViewCell *)tableView:(TKHorizontalTableView *)tableView cellAtIndex:(NSUInteger)index {
@@ -40,7 +40,7 @@
     if (!cell) {
         cell = [[TKHorizontalTableViewCell alloc] init];
     }
-    cell.backgroundColor = [UIColor colorWithWhite:index/20.0 alpha:1];
+    cell.backgroundColor = [UIColor colorWithWhite:index/100.0 alpha:1];
     return cell;
 }
 
